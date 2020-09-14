@@ -1903,6 +1903,7 @@ color: #F4F4F4;
     margin-left: -20px;
   }
   .shedule_table--mobile{
+    margin: 0 20px;
     display: block;
     text-align: center;
     border-collapse: collapse;
