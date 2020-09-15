@@ -313,7 +313,7 @@ textarea:focus {
   top: -350px;
   right: 0;
   bottom: 0;
-  background: url("../images/svg/NEMEZIDA1.svg") center center no-repeat;
+  background: url("../images/svg/NEMEZIDA.svg") center center no-repeat;
   z-index: -1;
 }
 .header_fixed .header_main {
