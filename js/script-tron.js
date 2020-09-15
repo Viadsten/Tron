@@ -2,9 +2,13 @@ $(document).on("scroll", window, function () {
 	if (($(window).scrollTop() > 80) && ($(window).width() > 767)) {
 			$('.header_menu').addClass('header--fixed');
 			$('.header').addClass('header_fixed');
+			document.getElementById("logo-f").style.display = "flex";
+			document.getElementById("logo-n").style.display = "none";
 	} else {
 			$('.header_menu').removeClass('header--fixed');
 			$('.header').removeClass('header_fixed');
+			document.getElementById("logo-f").style.display = "none";
+			document.getElementById("logo-n").style.display = "block";
 	}
 });
 
@@ -145,31 +149,37 @@ var link1 = document.getElementById('1');
 var link2 = document.getElementById('2');
 var link3 = document.getElementById('3');
 var link4 = document.getElementById('4');
+var line1 = document.getElementById('l1');
+var line2 = document.getElementById('l2');
+var line3 = document.getElementById('l3');
 
 link1.addEventListener('click', function(){
 	link1.classList.add('active');
 	link2.classList.remove('active');
     link3.classList.remove('active');
-    link4.classList.remove('active');
+	link4.classList.remove('active');
+
 });
 
 link2.addEventListener('click', function(){
 	link2.classList.add('active');
+
 	link1.classList.remove('active');
     link3.classList.remove('active');
-    link4.classList.remove('active');
+	link4.classList.remove('active');
+
 });
 
 link3.addEventListener('click', function(){
 	link3.classList.add('active');
 	link1.classList.remove('active');
     link2.classList.remove('active');
-    link4.classList.remove('active');
+	link4.classList.remove('active');
 });
 
 link4.addEventListener('click', function(){
 	link4.classList.add('active');
 	link1.classList.remove('active');
     link2.classList.remove('active');
-    link3.classList.remove('active');
+	link3.classList.remove('active');
 });

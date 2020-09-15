@@ -3,13 +3,13 @@
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 1140.3" style="enable-background:new 0 0 1440 1140.3;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#49F1FE;stroke-width:2;stroke-opacity:0.25; filter: blur(4px);background: }
+	.st0{fill:none;stroke:#49F1FE;stroke-width:2;stroke-opacity:0.25; filter: blur(4px);}
 	.st1{fill:#30A5AE;fill-opacity:0.2;filter: blur(4px);}
 	.st2{fill:none;stroke:#49F1FE;stroke-opacity:0.2;filter: blur(5px);}
 	.st3{fill:none;stroke:#49F1FE;stroke-width:4;stroke-opacity:0.25;}
 </style>
 <g>
-	<g>
+	<g class="st0">
 		<path class="st0" d="M1574.7,574.1v85.7l-15.7,46.9 M1574.7,574.1l33.6-95.9 M1574.7,574.1l-25.2,59.2l-113.5,146.9 M1608.3,478.1
 			l-33.6-91.8 M1608.3,478.1l-69.3,85.7 M1574.7,386.3l0-214.3l-35.7-26.2 M1574.7,386.3l-86.2-106.1 M1574.7,386.3l-62,79.6
 			 M1574.7,386.3l-82-55.1 M1574.7,386.3l-161.9,0l-79.9,30.6 M1435.9,80.1l-143,42.9 M1097.4,316.9l267,0 M1539,145.8L1385.4,33.2

@@ -19,6 +19,7 @@
 }
 .shedule_table--mobile{
   display: none;
+  
 }
 
 /*footer*/
@@ -160,7 +161,6 @@ textarea:focus {
 }
 
 .section-wrap2 {
-  max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 200px;
@@ -175,6 +175,12 @@ textarea:focus {
 .header__logo{
   max-width: 210px;
   margin-right: 150px;
+}
+.header__logo:hover{
+  opacity: 0.6;
+}
+.header__logo:active{
+  opacity: 0.3;
 }
 .main-title {
   margin-bottom: 10px;
@@ -251,6 +257,7 @@ textarea:focus {
   margin-bottom: 0;
 }
 .lang_count {
+  margin-top: 3px;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -259,11 +266,22 @@ textarea:focus {
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
+.mob_lang:before{
+  position: absolute;
+  content: '';
+  background: url('../images/svg/arrow_drop.svg') center no-repeat;
+  width: 8px;
+  height: 5px;
+  right: 17px;
+  top: 12px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
 .lang_count p {
   margin: 0;
-  margin-left: 15px;
+  margin-left: 10px;
   color: #B6B2B2;
-  font-size: 14px;
+  font-size: 12px;
   width: 28px;
 }
 .lang_count--visible {
@@ -283,7 +301,7 @@ textarea:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  background: url("../images/svg/tron-header-bg.svg") center center no-repeat;
+  background: url("../images/svg/tron-header-bg1.svg") center center no-repeat;
   background-size: cover;
   background-color: #05283C;
   z-index: -2;
@@ -300,6 +318,13 @@ textarea:focus {
 }
 .header_fixed .header_main {
   margin-top: 470px;
+}
+.header__logo--fixed{
+  display: none;
+  width: 12%;
+  top: 2px;
+  min-width: 150px;
+  position: absolute;
 }
 .header--fixed {
   position: fixed;
@@ -321,7 +346,6 @@ textarea:focus {
 }
 .header--fixed .header_menu_block .lang{
   padding: 0 25px;
-  padding-top: 10px;
 }
 .header_menu {
   display: -webkit-box;
@@ -371,12 +395,41 @@ textarea:focus {
   display: -ms-flexbox;
   display: flex;
   padding-right: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+.link__line{
+  width: 125px;
+  height: 3px;
+  background-color: #49F1FE;
+  border: none;
+  margin-bottom: -13px;
+}
+.link__line--1{
+  display: none;
+}
+.link__line--2{
+  display: none;
+  width: 115px;
+}
+.link__line--3{
+  display: none;
+  width: 35px;
 }
 .header_menu-block ul .link:last-child {
   padding-right: 0;
 }
 .header_menu-block ul .link.active a {
   color: #49F1FE;
+}
+.link2:hover .link__line--1{
+  display: block;
+}
+.link3:hover .link__line--2{
+  display: block;
+}
+.link4:hover .link__line--3{
+  display: block;
 }
 .header_menu-block ul .link.log_in {
   padding-left: 50px;
@@ -409,7 +462,9 @@ textarea:focus {
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
   text-transform: uppercase;
+  padding-bottom: 2px;
 }
+
 .header_menu-block ul .link a span {
   font-weight: 300;
   font-size: 12px;
@@ -529,6 +584,10 @@ textarea:focus {
   letter-spacing: 0.205em;
   font-size: 15px;
   border: 3px solid #49F1FE;
+  transition: all .1s linear;
+}
+.registr__button:hover{
+  background-color: #062e46;
 }
 .header_main .main_block--desc p {
   margin: 0;
@@ -872,11 +931,10 @@ color: #F4F4F4;
   margin: 60px 0 100px;
 }
 .shedule_land-bottom p {
-  margin: 0;
+  margin: 0px auto;
   letter-spacing: 0.205em;
   text-transform: uppercase;
   font-size: 13px;
-  width: 500px;
 }
 .shedule_table table {
   margin: 0 auto;
@@ -2129,11 +2187,11 @@ color: #F4F4F4;
 }
 
 .members__item p{
-  line-height: 20px;
+  line-height: 1px;
   letter-spacing: 0.1em;
   color: #606060;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
 }
 .members__item span{
   letter-spacing: 0.1em;
@@ -2233,7 +2291,7 @@ text-transform: uppercase;
     font-size: 55px;
   }
   .members__item p {
-  line-height: 40px;
+  line-height: 30px;
   }
   .members__desc-wrapper{
     margin-top: 50px;
@@ -2388,6 +2446,7 @@ text-transform: uppercase;
     height: 60px;
     font-size: 13px;
   }
+  
 }
 
 @media (min-width: 694px) {
@@ -2416,9 +2475,19 @@ text-transform: uppercase;
     padding: 40px 30px 0 15px;
   }
   .advantages__dwnld-btn{
+    width: 250px;
+    height: 60px;
+    font-size: 14px;
+    transition: all .1s linear;
+  }
+  .advantages__dwnld-btn:hover{
     width: 300px;
     height: 70px;
     font-size: 13px;
+    margin-left: -25px;
+    margin-right: -25px;
+    font-size: 15px;
+    border-radius: 40px;
   }
 }
 
@@ -2469,6 +2538,8 @@ text-transform: uppercase;
   }
   .shedule_land-top{
     padding: 0 10px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -2631,3 +2702,4 @@ line-height: 33px;
   }
 
 }
+
