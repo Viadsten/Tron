@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0;
 }
 .footer__list{
   min-width: 180px;
@@ -239,6 +240,9 @@ textarea:focus {
   top: 66px;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
+}
+.header--fixed .lang:before {
+  top: 16px;
 }
 .lang--visible {
   display: block;
@@ -1090,6 +1094,7 @@ color: #F4F4F4;
   top: 9px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  
 }
 .faq-accordion .set-title.active:after {
   position: absolute;
@@ -1101,7 +1106,9 @@ color: #F4F4F4;
   top: 9px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+          
 }
+
 .faq-accordion .set-title.active b:before {
   position: absolute;
   content: '';
@@ -1110,6 +1117,8 @@ color: #F4F4F4;
   right: 0;
   height: 3px;
   background-color: #49F1FE;
+
+  
 }
 .faq-accordion .set .content {
   margin-top: 60px;
@@ -2398,8 +2407,17 @@ text-transform: uppercase;
   text-transform: uppercase;
   color: #313131;
   border-radius: 25px;
-}
+  transition: all .1s linear;
 
+}
+.advantages__dwnld-btn:hover{
+  width: 200px;
+  font-size: 14px;
+  margin-left: -25px;
+  margin-right: -25px;
+  font-size: 15px;
+  border-radius: 40px;
+}
 .advantages__description{
   color: #606060;
   font-family: 'Roboto_Light';
@@ -2445,6 +2463,14 @@ text-transform: uppercase;
     width: 200px;
     height: 60px;
     font-size: 13px;
+  }
+  .advantages__dwnld-btn:hover{
+    width: 250px;
+    font-size: 14px;
+    margin-left: -25px;
+    margin-right: -25px;
+    font-size: 15px;
+    border-radius: 40px;
   }
   
 }
@@ -2695,11 +2721,14 @@ text-transform: uppercase;
     font-size: 20px;
 line-height: 33px;
   }
+  
+
+}
+
+@media screen and (min-width: 980px) {
   .ref__item{
     width: 160px;
     height: 160px;
     padding-top: 15px;
   }
-
 }
-
